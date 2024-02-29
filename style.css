@@ -1,0 +1,388 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+  /* Enable vertical scrollbar */
+}
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+}
+
+.container1,
+.container2 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Scrollbar Styles */
+body::-webkit-scrollbar {
+  width: 6px;
+  /* Adjust the width as needed */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #add8e6;
+  /* Pastel blue color */
+  border-radius: 10px;
+  /* Curved edges */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+  /* Background color of the track */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #9370db;
+  /* Pastel violet/purple for hover */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 7%;
+  /* Adjusted height */
+  width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 1px 1px 30px 30px;
+  backdrop-filter: saturate(120%) blur(10px);
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #87ceeb;
+  /* Pastel blue color */
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.logo span {
+  color: #add8e6;
+  /* Lighter blue for span */
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+}
+
+.navlist li {
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+.navlist a {
+  text-decoration: none;
+  color: #87ceeb;
+  /* Pastel blue color */
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+}
+
+.navlist a:hover {
+  color: #9370db;
+  /* Pastel violet/purple for hover */
+}
+
+/* Home Section Styles */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7)), url('Images/render1.png') center/cover no-repeat;
+  /* Update this line */
+  background-size: cover;
+  /* Ensure the background covers the entire section */
+  background-attachment: fixed;
+  /* Parallax effect */
+  background-position: center;
+  /* Adjust as needed */
+}
+
+.home-text {
+  text-align: center;
+}
+
+.home-text h4 {
+  font-size: 30px;
+  color: #87ceeb;
+  /* Pastel blue color */
+}
+
+.home-text h1 {
+  font-size: 3em;
+  margin: 20px 0;
+  color: #00b4d8;
+}
+
+.home-text span {
+  color: #add8e6;
+  /* Lighter blue for span */
+}
+
+.home-text p {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #87ceeb;
+}
+
+/* About Section */
+.About {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7)), url('Images/render2.png') center/cover no-repeat;
+  /* Update this line */
+  background-size: cover;
+  /* Ensure the background covers the entire section */
+  background-attachment: fixed;
+  /* Parallax effect */
+  background-position: center;
+  /* Adjust as needed */
+}
+
+.About-container {
+  max-width: 800px;
+  /* Adjust as needed */
+  width: 100%;
+  height: 500px;
+  /* Adjust the height as needed */
+  padding: 30px;
+  border-radius: 20px;
+  /* Curved edges */
+  backdrop-filter: blur(10px);
+  /* Apply blur to the background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  /* Shadow effect */
+  margin-left: 20px;
+  /* Move container 20px to the right */
+  display: flex;
+  /* Use flexbox */
+  align-items: center;
+  /* Align items vertically */
+}
+
+.About-img .profile-image {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  /* Shadow effect */
+}
+
+.About-text {
+  max-width: 500px;
+  /* Adjust as needed */
+  margin-left: 30px;
+  /* Adjust the margin to create space between the image and text */
+  text-align: justify;
+}
+
+.About-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #87ceeb;
+  /* Pastel blue color */
+}
+
+.About-text h4 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #add8e6;
+  /* Lighter blue for span */
+}
+
+.About-text p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+  color: #caf0f8;
+}
+
+/* Skills Section Styles */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px 20px; /* Adjust padding */
+  margin: 0;
+  position: relative;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7)), url('Images/render3.png') center/cover no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container3 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skills-text {
+  text-align: center;
+  color: #fff; /* Adjust text color for contrast */
+  margin-bottom: 30px;
+}
+
+.skills-text h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.skills-text p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin-bottom: 20px;
+}
+
+.skills-icons {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.skill {
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.skill i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #87ceeb; /* Adjust icon color */
+}
+
+
+/* Projects Section Styles */
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+  background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7)), url('Images/render4.png') center/cover no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container4 {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px; /* Adjust as needed */
+  padding: 20px; /* Add padding to make the blur visible */
+}
+
+.project-card {
+  width: 600px; /* Adjust the width as needed */
+  margin-right: 50px; /* Increase the spacing between cards */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  backdrop-filter: blur(10px); /* Apply blur to the background */
+}
+
+.project-card:last-child {
+  margin-right: 0; /* Remove right margin for the last card */
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+
+.project-details {
+  padding: 20px;
+}
+
+.project-details h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.project-details p {
+  font-size: 1.2em;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.project-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #87ceeb; /* Pastel blue color */
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-button:hover {
+  background-color: #9370db; /* Pastel violet/purple for hover */
+}
+
+/* Social Icons */
+.icons {
+  position: fixed;
+  bottom: 5px;
+  left: 20px;
+  display: flex;
+}
+
+.icons a {
+  margin-right: 10px;
+  color: #87ceeb;
+  /* Pastel blue color */
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.icons a:hover {
+  color: #9370db;
+  /* Pastel violet/purple for hover */
+}
