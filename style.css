@@ -295,8 +295,8 @@ header {
 /* Projects Section Styles */
 .projects {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; /* Align items vertically */
+  align-items: center; /* Center items horizontally */
   min-height: 100vh;
   padding: 20px;
   margin: 0;
@@ -363,6 +363,17 @@ header {
 
 .project-button:hover {
   background-color: #9370db; /* Pastel violet/purple for hover */
+}
+
+/* YouTube Video Container Styles */
+.youtube-container {
+  width: 100%;
+  max-width: 800px; /* Adjust the maximum width as needed */
+  margin-top: 50px; /* Adjust as needed */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  backdrop-filter: blur(10px); /* Apply blur to the background */
 }
 
 /* Social Icons */
