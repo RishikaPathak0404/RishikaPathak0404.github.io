@@ -6,20 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HyperMuffin</title>
 
-  <!-- custom css link-->
   <link rel="stylesheet" href="style.css">
 
-  <!-- GSAP library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
 
-  <!-- boxicons link-->
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
-  <!-- remixicons link-->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-  <!-- google fonts link-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
@@ -40,7 +35,6 @@
     </ul>
   </header>
 
-  <!-- home section design-->
   <section class="home" id="home">
     <div class="container1">
       <div class="home-text">
@@ -51,11 +45,9 @@
     </div>
   </section>
 
-  <!-- about section design-->
   <section class="About" id="about">
     <div class="About-container">
       <div class="About-img">
-        <!-- Add a cute image of yourself -->
         <img src="Images/Mavis.jpg" alt="Cute Rishika" class="profile-image">
       </div>
       <div class="About-text">
@@ -69,87 +61,104 @@
     </div>
   </section>
 
-  <!-- skills section design -->
-<section class="skills" id="skills">
-  <div class="container3">
-    <div class="skills-text">
-      <h2>Skills</h2>
-      <p>Explore the arsenal of skills that I wield with finesse.</p>
+  <section class="skills" id="skills">
+    <div class="container3">
+      <div class="skills-text">
+        <h2>Skills</h2>
+        <p>Explore the arsenal of skills that I wield with finesse.</p>
+      </div>
+      <div class="skills-icons">
+        <div class="skill">
+          <i class="ri-code-line"></i>
+          <p>Web Development</p>
+        </div>
+        <div class="skill">
+          <i class="ri-paint-brush-line"></i>
+          <p>UI/UX Design</p>
+        </div>
+        <div class="skill">
+          <i class="ri-pencil-ruler-line"></i>
+          <p>Graphic Design</p>
+        </div>
+      </div>
+      <div class="certificates">
+        <h3>Certificates</h3>
+        <div class="certificate">
+          <a href="https://www.linkedin.com/in/rishikapathak/overlay/1713706752295/single-media-viewer/?profileId=ACoAADqAHmgB86Nu7ZHjgNI16uE9hVDcoB7xMwc"
+            target="_blank">
+            <img src="Images/Certificate.png" alt="Data Mining with Weka Certificate">
+          </a>
+          <p>Data Mining with Weka: Certificate of Completion</p>
+          <p>Participated in a week-long online training course focused on data mining utilizing the Weka tool. Gained
+            hands-on experience in data preprocessing, classification, clustering, and association rule mining with
+            Weka, organized jointly by Science Transactions and Inficom Solutions.</p>
+        </div>
+      </div>
     </div>
-    <div class="skills-icons">
-      <!-- Add your skills and icons here -->
-      <div class="skill">
-        <i class="ri-code-s-slash"></i>
-        <p>Web Development</p>
-      </div>
-      <div class="skill">
-        <i class="ri-paint-brush-line"></i>
-        <p>UI/UX Design</p>
-      </div>
-      <div class="skill">
-        <i class="ri-pencil-ruler-line"></i>
-        <p>Graphic Design</p>
-      </div>
-      <!-- Add more skills as needed -->
-    </div>
-  </div>
-</section>
+  </section>
 
-  <!-- projects section design -->
+
   <section class="projects" id="projects">
-    <div class="container4">
-      <!-- Google Drive PowerPoint Link -->
-      <div class="project-card">
-        <img src="Images/pp.png" alt="Project 1" class="project-image">
+    <div class="project-section" id="ug-project">
+      <div class="project-container">
+        <h2>UG Project</h2>
         <div class="project-details">
-          <h3>PowerPoint Presentation</h3>
-          <p>View the project presentation on Google Drive.</p>
-          <a href="https://drive.google.com/drive/folders/1aiH5MQWseq4eKvshjYLTei2HuFds_MHm" class="project-button">View
+          <iframe
+            src="https://itch.io/embed/2671195?linkback=true&amp;bg_color=6eb1e9&amp;link_color=fac7c7&amp;border_color=594848"
+            width="552" height="167" frameborder="0"></iframe>
+          <p>Embark on a thrilling space adventure in Space InWorder! Type to shoot down asteroids and navigate through
+            the cosmos. Master your typing skills to survive the challenges of outer space. Are you ready to take on the
+            cosmic challenge?</p>
+          <a href="#" class="project-button">View Project Report</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-section" id="conm-project">
+      <div class="project-container">
+        <h2>CONM</h2>
+        <div class="project-details">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/CONM_VIDEO_ID_HERE" frameborder="0"
+            allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TOC_VIDEO_ID_HERE" frameborder="0"
+            allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TOC_VIDEO_ID_HERE" frameborder="0"
+            allowfullscreen></iframe>
+          <p>This repository contains Python implementations of various numerical methods and interpolation algorithms
+            commonly used in computational mathematics and science. These algorithms are useful for solving a wide range
+            of mathematical problems, including root finding, function approximation, and linear system solving.</p>
+          <a href="https://github.com/RishikaPathak0404/CONM" class="project-button">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-section" id="toc-project">
+      <div class="project-container">
+        <h2>TOC</h2>
+        <div class="project-details">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/DEJqlDQy2TQ?si=cq2-ePu7Wxi4ZCGY"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TOC_VIDEO_ID_HERE" frameborder="0"
+            allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TOC_VIDEO_ID_HERE" frameborder="0"
+            allowfullscreen></iframe>
+          <p>TOC project presentation slides are available on Google Drive.</p>
+          <a href="https://drive.google.com/drive/folders/1aiH5MQWseq4eKvshjYLTei2HuFds_MHm?usp=drive_link"
+            class="project-button">View
             on Google Drive</a>
         </div>
       </div>
-      <div class="project-card">
-        <img src="Images/project1.jpg" alt="Project 1" class="project-image">
-        <div class="project-details">
-          <h3>Project 2</h3>
-          <p>A brief description of the project goes here.</p>
-          <a href="#" class="project-button">View on GitHub</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="Images/project1.jpg" alt="Project 1" class="project-image">
-        <div class="project-details">
-          <h3>Project 3</h3>
-          <p>A brief description of the project goes here.</p>
-          <a href="#" class="project-button">View on GitHub</a>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="Images/project1.jpg" alt="Project 1" class="project-image">
-        <div class="project-details">
-          <h3>Project 4</h3>
-          <p>A brief description of the project goes here.</p>
-          <a href="#" class="project-button">View on GitHub</a>
-        </div>
-      </div>
-      <!-- Repeat the above card structure for other projects -->
-    </div>
-
-    <!-- YouTube Video Link Container -->
-    <div class="youtube-container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/DEJqlDQy2TQ" title="YouTube Video"
-        frameborder="0" allowfullscreen></iframe>
     </div>
   </section>
-  <!-- social icons -->
+
   <div class="icons">
-    <!-- Update social media links -->
     <a href="https://www.linkedin.com/in/rishika-pathak-20883b234/"><i class="ri-linkedin-fill"></i></a>
     <a href="https://twitter.com/PathakRishika4?t=R_sv00KF4aMg8vz9vK4RPQ&s=08"><i class="ri-twitter-fill"></i></a>
     <a href="https://github.com/RishikaPathak0404"><i class="ri-github-line"></i></a>
   </div>
 
-  <!-- custom js link-->
   <script src="script.js"></script>
 
 </body>
