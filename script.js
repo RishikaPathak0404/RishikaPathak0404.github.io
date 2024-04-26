@@ -1,16 +1,13 @@
-// Import the ScrollTrigger from GSAP
 gsap.registerPlugin(ScrollTrigger);
 
-// Header Animation
-let navlist = document.querySelector('.navlist');
+const navlist = document.querySelector('.navlist');
 const header = document.querySelector("header");
-const triggerHeight = header.clientHeight; // Height of the header
+const triggerHeight = header.clientHeight; 
 
 window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > triggerHeight);
 });
 
-// ScrollReveal Animations
 const tl = gsap.timeline({
     scrollTrigger: {
         trigger: ".home",
@@ -70,9 +67,48 @@ gsap.from(".skills-icons", {
     duration: 1
 });
 
-gsap.from(".project-card", {
+gsap.from(".certificate", {
     scrollTrigger: {
-        trigger: ".project-card",
+        trigger: ".certificates",
+        start: "top center",
+        end: "bottom center",
+        toggleActions: "play none none none",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.2
+});
+
+gsap.from(".project-section", {
+    scrollTrigger: {
+        trigger: ".project-section",
+        start: "top center",
+        end: "bottom center",
+        toggleActions: "play none none none",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.2
+});
+
+gsap.from(".conm-video", {
+    scrollTrigger: {
+        trigger: ".conm-videos",
+        start: "top center",
+        end: "bottom center",
+        toggleActions: "play none none none",
+    },
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.2
+});
+
+gsap.from(".toc-video", {
+    scrollTrigger: {
+        trigger: ".toc-videos",
         start: "top center",
         end: "bottom center",
         toggleActions: "play none none none",
