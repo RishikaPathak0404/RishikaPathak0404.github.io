@@ -3,10 +3,8 @@ body {
   height: 100%;
   margin: 0;
   overflow-y: auto;
-  /* Enable vertical scrollbar */
 }
 
-/* Reset some default styles */
 body,
 h1,
 h2,
@@ -25,7 +23,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  /* Hide horizontal scrollbar */
 }
 
 .container1,
@@ -34,34 +31,27 @@ body {
   margin: 0 auto;
 }
 
-/* Scrollbar Styles */
 body::-webkit-scrollbar {
   width: 6px;
-  /* Adjust the width as needed */
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #add8e6;
-  /* Pastel blue color */
   border-radius: 10px;
-  /* Curved edges */
 }
 
 body::-webkit-scrollbar-track {
   background-color: #f9f9f9;
-  /* Background color of the track */
 }
 
 body::-webkit-scrollbar-thumb:hover {
   background-color: #9370db;
-  /* Pastel violet/purple for hover */
 }
 
 header {
   position: fixed;
   top: 0;
   height: 7%;
-  /* Adjusted height */
   width: 98%;
   display: flex;
   align-items: center;
@@ -77,14 +67,12 @@ header {
   text-decoration: none;
   font-size: 1.5em;
   color: #87ceeb;
-  /* Pastel blue color */
   font-weight: bold;
   margin-left: 10px;
 }
 
 .logo span {
   color: #add8e6;
-  /* Lighter blue for span */
 }
 
 .navlist {
@@ -100,17 +88,14 @@ header {
 .navlist a {
   text-decoration: none;
   color: #87ceeb;
-  /* Pastel blue color */
   font-weight: 600;
   transition: color 0.3s ease-in-out;
 }
 
 .navlist a:hover {
   color: #9370db;
-  /* Pastel violet/purple for hover */
 }
 
-/* Home Section Styles */
 .home {
   display: flex;
   justify-content: space-between;
@@ -120,13 +105,9 @@ header {
   margin: 0;
   position: relative;
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7)), url('Images/render1.png') center/cover no-repeat;
-  /* Update this line */
   background-size: cover;
-  /* Ensure the background covers the entire section */
   background-attachment: fixed;
-  /* Parallax effect */
   background-position: center;
-  /* Adjust as needed */
 }
 
 .home-text {
@@ -136,7 +117,6 @@ header {
 .home-text h4 {
   font-size: 30px;
   color: #87ceeb;
-  /* Pastel blue color */
 }
 
 .home-text h1 {
@@ -147,7 +127,6 @@ header {
 
 .home-text span {
   color: #add8e6;
-  /* Lighter blue for span */
 }
 
 .home-text p {
@@ -156,7 +135,6 @@ header {
   color: #87ceeb;
 }
 
-/* About Section */
 .About {
   display: flex;
   justify-content: space-between;
@@ -166,34 +144,22 @@ header {
   margin: 0;
   position: relative;
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7)), url('Images/render2.png') center/cover no-repeat;
-  /* Update this line */
   background-size: cover;
-  /* Ensure the background covers the entire section */
   background-attachment: fixed;
-  /* Parallax effect */
   background-position: center;
-  /* Adjust as needed */
 }
 
 .About-container {
   max-width: 800px;
-  /* Adjust as needed */
   width: 100%;
   height: 500px;
-  /* Adjust the height as needed */
   padding: 30px;
   border-radius: 20px;
-  /* Curved edges */
   backdrop-filter: blur(10px);
-  /* Apply blur to the background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  /* Shadow effect */
   margin-left: 20px;
-  /* Move container 20px to the right */
   display: flex;
-  /* Use flexbox */
   align-items: center;
-  /* Align items vertically */
 }
 
 .About-img .profile-image {
@@ -203,14 +169,11 @@ header {
   max-width: 100%;
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  /* Shadow effect */
 }
 
 .About-text {
   max-width: 500px;
-  /* Adjust as needed */
   margin-left: 30px;
-  /* Adjust the margin to create space between the image and text */
   text-align: justify;
 }
 
@@ -218,14 +181,12 @@ header {
   font-size: 2.5em;
   margin-bottom: 10px;
   color: #87ceeb;
-  /* Pastel blue color */
 }
 
 .About-text h4 {
   font-size: 1.5em;
   margin-bottom: 20px;
   color: #add8e6;
-  /* Lighter blue for span */
 }
 
 .About-text p {
@@ -235,13 +196,12 @@ header {
   color: #caf0f8;
 }
 
-/* Skills Section Styles */
 .skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 50px 20px; /* Adjust padding */
+  padding: 50px 20px;
   margin: 0;
   position: relative;
   background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.7)), url('Images/render3.png') center/cover no-repeat;
@@ -257,7 +217,7 @@ header {
 
 .skills-text {
   text-align: center;
-  color: #fff; /* Adjust text color for contrast */
+  color: #fff; 
   margin-bottom: 30px;
 }
 
@@ -288,15 +248,52 @@ header {
 .skill i {
   font-size: 2em;
   margin-bottom: 10px;
-  color: #87ceeb; /* Adjust icon color */
+  color: #87ceeb; 
 }
 
+.certificates {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-/* Projects Section Styles */
+.certificates h3 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.certificate {
+  width: 300px;
+  margin: 0 20px 30px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.certificate img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.certificate p {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.6em;
+  margin-bottom: 15px;
+}
+
 .projects {
   display: flex;
-  flex-direction: column; /* Align items vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column; 
+  align-items: center;
   min-height: 100vh;
   padding: 20px;
   margin: 0;
@@ -307,54 +304,49 @@ header {
   background-position: center;
 }
 
-.container4 {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px; /* Adjust as needed */
-  padding: 20px; /* Add padding to make the blur visible */
-}
-
-.project-card {
-  width: 600px; /* Adjust the width as needed */
-  margin-right: 50px; /* Increase the spacing between cards */
-  border-radius: 20px;
-  overflow: hidden;
+.project-section {
+  backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  backdrop-filter: blur(10px); /* Apply blur to the background */
+  padding: 50px 20px;
+  margin-bottom: 20px; 
+  width: 100%; 
+  max-width: 800px; 
+  border-radius: 10px; 
+  backdrop-filter: blur(10px);
+  color: white;
 }
 
-.project-card:last-child {
-  margin-right: 0; /* Remove right margin for the last card */
+.project-container {
+  text-align: center;
 }
 
-.project-image {
-  width: 100%;
-  height: auto;
-  border-radius: 20px 20px 0 0;
+.project-container h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
 .project-details {
-  padding: 20px;
+  margin-top: 30px;
 }
 
-.project-details h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #fff;
+.project-details iframe {
+  width: 100%;
+  height: 315px; 
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .project-details p {
   font-size: 1.2em;
-  color: #fff;
-  margin-bottom: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .project-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #87ceeb; /* Pastel blue color */
+  background-color: #87ceeb; 
   color: #fff;
   border-radius: 10px;
   text-decoration: none;
@@ -362,21 +354,9 @@ header {
 }
 
 .project-button:hover {
-  background-color: #9370db; /* Pastel violet/purple for hover */
+  background-color: #9370db; 
 }
 
-/* YouTube Video Container Styles */
-.youtube-container {
-  width: 100%;
-  max-width: 800px; /* Adjust the maximum width as needed */
-  margin-top: 50px; /* Adjust as needed */
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  backdrop-filter: blur(10px); /* Apply blur to the background */
-}
-
-/* Social Icons */
 .icons {
   position: fixed;
   bottom: 5px;
@@ -387,7 +367,6 @@ header {
 .icons a {
   margin-right: 10px;
   color: #87ceeb;
-  /* Pastel blue color */
   font-size: 1.5em;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
@@ -395,5 +374,4 @@ header {
 
 .icons a:hover {
   color: #9370db;
-  /* Pastel violet/purple for hover */
 }
